@@ -1,0 +1,57 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Multi-Class Cancer Classification</title>
+  <desc id="desc">Deep learning vision system with CNN, Vision Transformer, and confusion matrix</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#120B1C"/>
+      <stop offset="55%" stop-color="#140E1C"/>
+      <stop offset="100%" stop-color="#0C0C0C"/>
+    </linearGradient>
+    <linearGradient id="violet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A78BFA"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="75%" cy="20%" r="45%">
+      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect width="1200" height="750" fill="url(#glow)"/>
+  <g transform="translate(110,110)">
+    <rect width="980" height="530" rx="28" fill="rgba(255,255,255,0.04)" stroke="rgba(167,139,250,0.3)" stroke-width="1.5"/>
+    <g transform="translate(40,40)">
+      <rect width="300" height="300" rx="22" fill="rgba(5,5,5,0.55)" stroke="rgba(255,255,255,0.08)"/>
+      <circle cx="150" cy="140" r="70" fill="none" stroke="url(#violet)" stroke-width="3" opacity="0.9"/>
+      <circle cx="150" cy="140" r="42" fill="rgba(167,139,250,0.15)" stroke="#A78BFA" stroke-width="2"/>
+      <rect x="70" y="230" width="160" height="12" rx="6" fill="rgba(255,255,255,0.14)"/>
+      <rect x="90" y="258" width="120" height="10" rx="5" fill="rgba(255,255,255,0.08)"/>
+    </g>
+    <g transform="translate(370,40)">
+      <rect width="260" height="140" rx="18" fill="rgba(5,5,5,0.5)" stroke="rgba(255,255,255,0.08)"/>
+      <text x="24" y="44" fill="#A0AEC0" font-family="Inter,Arial,sans-serif" font-size="15">CNN Branch</text>
+      <rect x="24" y="68" width="180" height="10" rx="5" fill="#38BDF8" opacity="0.75"/>
+      <rect x="24" y="96" width="140" height="10" rx="5" fill="rgba(56,189,248,0.4)"/>
+    </g>
+    <g transform="translate(660,40)">
+      <rect width="280" height="140" rx="18" fill="rgba(5,5,5,0.5)" stroke="rgba(255,255,255,0.08)"/>
+      <text x="24" y="44" fill="#A0AEC0" font-family="Inter,Arial,sans-serif" font-size="15">Vision Transformer</text>
+      <rect x="24" y="68" width="180" height="10" rx="5" fill="#A78BFA" opacity="0.8"/>
+      <rect x="24" y="96" width="150" height="10" rx="5" fill="rgba(167,139,250,0.4)"/>
+    </g>
+    <g transform="translate(370,210)">
+      <rect width="570" height="270" rx="20" fill="rgba(5,5,5,0.5)" stroke="rgba(255,255,255,0.08)"/>
+      <text x="28" y="48" fill="#A0AEC0" font-family="Inter,Arial,sans-serif" font-size="15">Confusion Matrix</text>
+      <g transform="translate(80,80)">
+        <rect width="70" height="70" rx="10" fill="rgba(52,211,153,0.55)"/>
+        <rect x="86" width="70" height="70" rx="10" fill="rgba(255,255,255,0.08)"/>
+        <rect x="172" width="70" height="70" rx="10" fill="rgba(255,255,255,0.06)"/>
+        <rect x="258" width="70" height="70" rx="10" fill="rgba(249,115,22,0.25)"/>
+        <rect y="86" width="70" height="70" rx="10" fill="rgba(255,255,255,0.08)"/>
+        <rect x="86" y="86" width="70" height="70" rx="10" fill="rgba(52,211,153,0.45)"/>
+        <rect x="172" y="86" width="70" height="70" rx="10" fill="rgba(255,255,255,0.07)"/>
+        <rect x="258" y="86" width="70" height="70" rx="10" fill="rgba(255,255,255,0.05)"/>
+      </g>
+    </g>
+  </g>
+</svg>

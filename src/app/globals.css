@@ -1,0 +1,185 @@
+@import "tailwindcss";
+
+:root {
+  --background: #050505;
+  --secondary-bg: #0a0a0a;
+  --primary: #38bdf8;
+  --accent: #f97316;
+  --card: rgba(255, 255, 255, 0.03);
+  --text-primary: #f5f5f5;
+  --text-secondary: #8b93a7;
+  --text-muted: #6b7280;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(255, 255, 255, 0.14);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --radius-card: 1.25rem;
+  --radius-control: 9999px;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-secondary-bg: var(--secondary-bg);
+  --color-primary: var(--primary);
+  --color-accent: var(--accent);
+  --color-card: var(--card);
+  --color-secondary: var(--text-secondary);
+  --color-muted: var(--text-muted);
+  --color-white: var(--text-primary);
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-space-grotesk);
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--text-primary);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  font-feature-settings: "ss01" on, "cv11" on;
+  letter-spacing: -0.011em;
+  line-height: 1.65;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--primary) 32%, transparent);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.font-heading {
+  font-family: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: -0.04em;
+}
+
+.section-pad {
+  padding-block: clamp(6rem, 11vw, 9.5rem);
+}
+
+.container-pad {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 70rem;
+  padding-inline: clamp(1.25rem, 4vw, 2rem);
+}
+
+:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--primary) 75%, white);
+  outline-offset: 3px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.focus\:not-sr-only:focus,
+.focus\:not-sr-only:focus-visible {
+  position: fixed;
+  width: auto;
+  height: auto;
+  padding: 0.75rem 1.25rem;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+.surface {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.045) 0%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+  border: 1px solid var(--border);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.02) inset,
+    0 24px 80px -48px rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(20px);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.gradient-text {
+  background: linear-gradient(180deg, #ffffff 20%, rgba(255, 255, 255, 0.52) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Premium interactive surfaces */
+.hover-lift {
+  transition:
+    transform 0.45s var(--ease-out-expo),
+    border-color 0.35s ease,
+    background-color 0.35s ease,
+    box-shadow 0.45s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-hover);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.03) inset,
+    0 28px 70px -40px rgba(0, 0, 0, 0.95),
+    0 0 40px -20px rgba(56, 189, 248, 0.12);
+}
+
+.link-underline {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0 1px;
+  transition: background-size 0.35s var(--ease-out-expo);
+}
+
+.link-underline:hover {
+  background-size: 100% 1px;
+}

@@ -1,0 +1,58 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">Bank Loan Credit Risk Assessment</title>
+  <desc id="desc">Machine learning dashboard with risk score, charts, and model metrics</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#061612"/>
+      <stop offset="55%" stop-color="#0A1614"/>
+      <stop offset="100%" stop-color="#0B0F0E"/>
+    </linearGradient>
+    <linearGradient id="good" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34D399"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="80%" cy="18%" r="45%">
+      <stop offset="0%" stop-color="#34D399" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#34D399" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect width="1200" height="750" fill="url(#glow)"/>
+  <g transform="translate(110,110)">
+    <rect width="980" height="530" rx="28" fill="rgba(255,255,255,0.04)" stroke="rgba(52,211,153,0.28)" stroke-width="1.5"/>
+    <g transform="translate(40,40)">
+      <rect width="280" height="200" rx="20" fill="rgba(5,5,5,0.5)" stroke="rgba(255,255,255,0.08)"/>
+      <text x="28" y="48" fill="#A0AEC0" font-family="Inter,Arial,sans-serif" font-size="15">Risk Score</text>
+      <text x="28" y="110" fill="#FFFFFF" font-family="Space Grotesk,Arial,sans-serif" font-size="56" font-weight="600">81%</text>
+      <rect x="28" y="140" width="180" height="10" rx="5" fill="rgba(255,255,255,0.08)"/>
+      <rect x="28" y="140" width="146" height="10" rx="5" fill="url(#good)"/>
+      <text x="28" y="178" fill="#34D399" font-family="Inter,Arial,sans-serif" font-size="13">Random Forest · SMOTETomek</text>
+    </g>
+    <g transform="translate(350,40)">
+      <rect width="590" height="200" rx="20" fill="rgba(5,5,5,0.5)" stroke="rgba(255,255,255,0.08)"/>
+      <polyline points="40,150 100,120 160,130 220,90 280,100 340,70 400,85 460,55 520,65" fill="none" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <polyline points="40,160 100,145 160,150 220,135 280,140 340,125 400,130 460,110 520,118" fill="none" stroke="#34D399" stroke-width="2.5" opacity="0.7" stroke-linecap="round"/>
+      <circle cx="520" cy="65" r="6" fill="#38BDF8"/>
+    </g>
+    <g transform="translate(40,270)">
+      <rect width="290" height="210" rx="20" fill="rgba(5,5,5,0.5)" stroke="rgba(255,255,255,0.08)"/>
+      <text x="28" y="48" fill="#A0AEC0" font-family="Inter,Arial,sans-serif" font-size="15">Feature Importance</text>
+      <rect x="28" y="76" width="200" height="12" rx="6" fill="rgba(56,189,248,0.75)"/>
+      <rect x="28" y="106" width="160" height="12" rx="6" fill="rgba(56,189,248,0.55)"/>
+      <rect x="28" y="136" width="120" height="12" rx="6" fill="rgba(56,189,248,0.4)"/>
+      <rect x="28" y="166" width="90" height="12" rx="6" fill="rgba(56,189,248,0.28)"/>
+    </g>
+    <g transform="translate(360,270)">
+      <rect width="270" height="210" rx="20" fill="rgba(5,5,5,0.5)" stroke="rgba(255,255,255,0.08)"/>
+      <text x="28" y="48" fill="#A0AEC0" font-family="Inter,Arial,sans-serif" font-size="15">Precision</text>
+      <text x="28" y="110" fill="#FFFFFF" font-family="Space Grotesk,Arial,sans-serif" font-size="42" font-weight="600">0.84</text>
+      <rect x="28" y="140" width="160" height="10" rx="5" fill="rgba(52,211,153,0.7)"/>
+    </g>
+    <g transform="translate(660,270)">
+      <rect width="280" height="210" rx="20" fill="rgba(5,5,5,0.5)" stroke="rgba(255,255,255,0.08)"/>
+      <text x="28" y="48" fill="#A0AEC0" font-family="Inter,Arial,sans-serif" font-size="15">Recall</text>
+      <text x="28" y="110" fill="#FFFFFF" font-family="Space Grotesk,Arial,sans-serif" font-size="42" font-weight="600">0.79</text>
+      <rect x="28" y="140" width="140" height="10" rx="5" fill="rgba(249,115,22,0.7)"/>
+    </g>
+  </g>
+</svg>
