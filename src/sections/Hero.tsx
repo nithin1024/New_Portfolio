@@ -20,14 +20,14 @@ function AnimatedName({ name }: { name: string }) {
 
   if (reduceMotion) {
     return (
-      <h1 className="font-heading text-balance text-[2.5rem] font-medium leading-[1.04] tracking-[-0.05em] text-white sm:text-6xl md:text-7xl lg:text-[4.6rem]">
+      <h1 className="font-heading text-balance text-[2.5rem] font-semibold leading-[1.02] tracking-[-0.04em] text-white sm:text-6xl md:text-7xl lg:text-[4.6rem]">
         {name}
       </h1>
     );
   }
 
   return (
-    <h1 className="font-heading text-balance text-[2.5rem] font-medium leading-[1.04] tracking-[-0.05em] text-white sm:text-6xl md:text-7xl lg:text-[4.6rem]">
+    <h1 className="font-heading text-balance text-[2.5rem] font-semibold leading-[1.02] tracking-[-0.04em] text-white sm:text-6xl md:text-7xl lg:text-[4.6rem]">
       {words.map((word, wi) => (
         <span key={`${word}-${wi}`} className="mr-[0.28em] inline-block last:mr-0">
           {word.split("").map((char, i) => (

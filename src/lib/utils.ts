@@ -14,6 +14,6 @@ export function formatDate(date: string) {
 }
 
 export function absoluteUrl(path: string) {
-  const base = process.env.NEXT_PUBLIC_SITE_URL ?? "https://nithinkumar.vercel.app";
+  const base = process.env.NEXT_PUBLIC_SITE_URL ?? "https://bandaru-nithinkumar.vercel.app";
   return `${base.replace(/\/$/, "")}${path.startsWith("/") ? path : `/${path}`}`;
 }

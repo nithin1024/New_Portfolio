@@ -99,7 +99,7 @@ export function AboutPortrait({ className, name, subtitle }: AboutPortraitProps)
           textAnchor="middle"
           fill="#38BDF8"
           fontSize="12"
-          fontFamily="Inter, Arial, sans-serif"
+          fontFamily="Manrope, Arial, sans-serif"
         >
           Python
         </text>
@@ -118,7 +118,7 @@ export function AboutPortrait({ className, name, subtitle }: AboutPortraitProps)
           textAnchor="middle"
           fill="#F97316"
           fontSize="12"
-          fontFamily="Inter, Arial, sans-serif"
+          fontFamily="Manrope, Arial, sans-serif"
         >
           React
         </text>
@@ -137,7 +137,7 @@ export function AboutPortrait({ className, name, subtitle }: AboutPortraitProps)
           textAnchor="middle"
           fill="#A0AEC0"
           fontSize="12"
-          fontFamily="Inter, Arial, sans-serif"
+          fontFamily="Manrope, Arial, sans-serif"
         >
           ML
         </text>
@@ -156,7 +156,7 @@ export function AboutPortrait({ className, name, subtitle }: AboutPortraitProps)
           textAnchor="middle"
           fill="#38BDF8"
           fontSize="12"
-          fontFamily="Inter, Arial, sans-serif"
+          fontFamily="Manrope, Arial, sans-serif"
         >
           PyTorch
         </text>
@@ -177,7 +177,7 @@ export function AboutPortrait({ className, name, subtitle }: AboutPortraitProps)
           y="544"
           fill="#8B949E"
           fontSize="15"
-          fontFamily="Inter, Arial, sans-serif"
+          fontFamily="Manrope, Arial, sans-serif"
         >
           {subtitle}
         </text>

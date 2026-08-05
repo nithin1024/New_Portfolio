@@ -1,26 +1,27 @@
 import type { Metadata, Viewport } from "next";
 import { Analytics } from "@vercel/analytics/react";
-import { Inter, Space_Grotesk } from "next/font/google";
+import { Manrope, Syne } from "next/font/google";
 import { SITE_CONFIG } from "@/constants/site";
 import { absoluteUrl } from "@/lib/utils";
 import "./globals.css";
 
-const inter = Inter({
+const manrope = Manrope({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-manrope",
   display: "swap",
   preload: true,
   adjustFontFallback: true,
+  weight: ["400", "500", "600", "700"],
   fallback: ["ui-sans-serif", "system-ui", "Segoe UI", "sans-serif"],
 });
 
-const spaceGrotesk = Space_Grotesk({
+const syne = Syne({
   subsets: ["latin"],
-  variable: "--font-space-grotesk",
+  variable: "--font-syne",
   display: "swap",
   preload: true,
   adjustFontFallback: true,
-  weight: ["400", "500", "600"],
+  weight: ["400", "500", "600", "700", "800"],
   fallback: ["ui-sans-serif", "system-ui", "Segoe UI", "sans-serif"],
 });
 
@@ -153,7 +154,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://avatars.githubusercontent.com" />
         <link rel="dns-prefetch" href="https://ghchart.rshah.org" />
       </head>
-      <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans antialiased`}>
+      <body className={`${manrope.variable} ${syne.variable} font-sans antialiased`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

@@ -36,13 +36,13 @@ export function SectionHeading({
       )}
     >
       {eyebrow ? (
-        <p className="mb-4 text-[11px] font-medium uppercase tracking-[0.26em] text-primary">
+        <p className="mb-4 text-[11px] font-semibold uppercase tracking-[0.28em] text-primary">
           {eyebrow}
         </p>
       ) : null}
       <h2
         id={id}
-        className="font-heading text-balance text-[1.85rem] font-medium leading-[1.12] tracking-[-0.045em] text-white sm:text-[2.75rem] md:text-[3.15rem]"
+        className="font-heading text-balance text-[1.85rem] font-semibold leading-[1.1] tracking-[-0.035em] text-white sm:text-[2.75rem] md:text-[3.15rem]"
       >
         <span className="gradient-text">{title}</span>
       </h2>

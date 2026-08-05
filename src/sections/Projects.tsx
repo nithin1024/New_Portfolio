@@ -35,7 +35,7 @@ function ProjectCard({
           <button
             type="button"
             onClick={() => onOpen(project)}
-            className="relative aspect-[16/10] min-h-[180px] overflow-hidden text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-primary/50"
+            className="relative aspect-[16/10] min-h-[160px] overflow-hidden text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-primary/50 sm:min-h-[180px]"
             aria-label={`Open details for ${project.title}`}
           >
             <div
@@ -55,7 +55,7 @@ function ProjectCard({
               aria-hidden
             />
             <div
-              className="absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-black/35 text-white opacity-100 backdrop-blur-md transition duration-300 sm:opacity-0 sm:group-hover:opacity-100"
+              className="absolute right-3 top-3 flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-black/35 text-white backdrop-blur-md sm:right-4 sm:top-4 sm:opacity-0 sm:transition sm:duration-300 sm:group-hover:opacity-100"
               aria-hidden
             >
               <ArrowUpRight className="h-4 w-4" />
@@ -70,7 +70,7 @@ function ProjectCard({
               {project.description}
             </p>
           </CardHeader>
-          <CardContent className="mt-auto flex flex-1 flex-col gap-6">
+          <CardContent className="mt-auto flex flex-1 flex-col gap-5 sm:gap-6">
             <ul
               className="flex list-none flex-wrap gap-2 p-0"
               aria-label={`${project.title} tech stack`}
@@ -95,34 +95,40 @@ function ProjectCard({
                 </li>
               ))}
             </ul>
-            <div className="mt-auto flex flex-wrap gap-2.5">
-              <Button size="sm" onClick={() => onOpen(project)} className="min-h-10">
+            <div className="mt-auto flex flex-col gap-2.5 sm:flex-row sm:flex-wrap">
+              <Button
+                size="sm"
+                onClick={() => onOpen(project)}
+                className="min-h-11 w-full sm:w-auto"
+              >
                 View details
               </Button>
-              <Button asChild size="sm" variant="secondary" className="min-h-10">
-                <a
-                  href={project.githubUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`${project.title} on GitHub`}
-                >
-                  <FaGithub className="h-3.5 w-3.5" aria-hidden />
-                  GitHub
-                </a>
-              </Button>
-              {project.liveUrl ? (
-                <Button asChild size="sm" variant="outline" className="min-h-10">
+              <div className="flex gap-2.5">
+                <Button asChild size="sm" variant="secondary" className="min-h-11 flex-1 sm:flex-none">
                   <a
-                    href={project.liveUrl}
+                    href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label={`${project.title} live demo`}
+                    aria-label={`${project.title} on GitHub`}
                   >
-                    <ExternalLink className="h-3.5 w-3.5" aria-hidden />
-                    Live Demo
+                    <FaGithub className="h-3.5 w-3.5" aria-hidden />
+                    GitHub
                   </a>
                 </Button>
-              ) : null}
+                {project.liveUrl ? (
+                  <Button asChild size="sm" variant="outline" className="min-h-11 flex-1 sm:flex-none">
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${project.title} live demo`}
+                    >
+                      <ExternalLink className="h-3.5 w-3.5" aria-hidden />
+                      Live Demo
+                    </a>
+                  </Button>
+                ) : null}
+              </div>
             </div>
           </CardContent>
         </Card>
@@ -148,7 +154,7 @@ export function Projects() {
           description="Production-minded systems across online judging, travel booking, credit risk ML, and medical imaging."
         />
 
-        <div className="grid gap-6 sm:gap-7 md:grid-cols-2 md:gap-8">
+        <div className="grid gap-5 sm:gap-7 md:grid-cols-2 md:gap-8">
           {PROJECTS.map((project, index) => (
             <ProjectCard
               key={project.id}
@@ -169,12 +175,12 @@ export function Projects() {
                   {selected.subtitle}
                 </p>
                 <DialogTitle className="mt-2">{selected.title}</DialogTitle>
-                <DialogDescription className="mt-3 text-[0.95rem] leading-relaxed">
+                <DialogDescription className="mt-3">
                   {selected.overview}
                 </DialogDescription>
               </DialogHeader>
 
-              <div className="space-y-8 text-sm">
+              <div className="mt-6 space-y-7 text-sm sm:mt-8 sm:space-y-8">
                 {[
                   { title: "Architecture", items: selected.architecture, color: "bg-primary" },
                   { title: "Features", items: selected.features, color: "bg-accent" },
@@ -188,24 +194,27 @@ export function Projects() {
                     <ul className="space-y-2.5 text-secondary">
                       {block.items.map((item) => (
                         <li key={item} className="flex gap-3 leading-relaxed">
-                          <span className={`mt-2 h-1.5 w-1.5 shrink-0 rounded-full ${block.color}`} />
-                          {item}
+                          <span
+                            className={`mt-2 h-1.5 w-1.5 shrink-0 rounded-full ${block.color}`}
+                            aria-hidden
+                          />
+                          <span className="min-w-0 break-words">{item}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
                 ))}
-                <div className="flex flex-wrap gap-2.5 border-t border-white/[0.08] pt-5">
-                  <Button asChild>
+                <div className="sticky bottom-0 flex flex-col gap-2.5 border-t border-white/[0.08] bg-[#0c0c0c] pt-4 sm:static sm:flex-row sm:flex-wrap sm:bg-transparent sm:pt-5">
+                  <Button asChild className="min-h-11 w-full sm:w-auto">
                     <a href={selected.githubUrl} target="_blank" rel="noopener noreferrer">
-                      <FaGithub className="h-4 w-4" />
+                      <FaGithub className="h-4 w-4" aria-hidden />
                       View on GitHub
                     </a>
                   </Button>
                   {selected.liveUrl ? (
-                    <Button asChild variant="secondary">
+                    <Button asChild variant="secondary" className="min-h-11 w-full sm:w-auto">
                       <a href={selected.liveUrl} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="h-4 w-4" />
+                        <ExternalLink className="h-4 w-4" aria-hidden />
                         Live Demo
                       </a>
                     </Button>
