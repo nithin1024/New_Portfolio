@@ -1,13 +1,13 @@
 import type { Metadata, Viewport } from "next";
 import { Analytics } from "@vercel/analytics/react";
-import { Manrope, Syne } from "next/font/google";
+import { Bricolage_Grotesque, Plus_Jakarta_Sans } from "next/font/google";
 import { SITE_CONFIG } from "@/constants/site";
 import { absoluteUrl } from "@/lib/utils";
 import "./globals.css";
 
-const manrope = Manrope({
+const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  variable: "--font-manrope",
+  variable: "--font-body",
   display: "swap",
   preload: true,
   adjustFontFallback: true,
@@ -15,9 +15,9 @@ const manrope = Manrope({
   fallback: ["ui-sans-serif", "system-ui", "Segoe UI", "sans-serif"],
 });
 
-const syne = Syne({
+const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
-  variable: "--font-syne",
+  variable: "--font-display",
   display: "swap",
   preload: true,
   adjustFontFallback: true,
@@ -149,12 +149,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark" suppressHydrationWarning>
+    <html
+      lang="en"
+      className={`dark ${plusJakarta.variable} ${bricolage.variable}`}
+      suppressHydrationWarning
+    >
       <head>
         <link rel="preconnect" href="https://avatars.githubusercontent.com" />
         <link rel="dns-prefetch" href="https://ghchart.rshah.org" />
       </head>
-      <body className={`${manrope.variable} ${syne.variable} font-sans antialiased`}>
+      <body className={`${plusJakarta.className} antialiased`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
