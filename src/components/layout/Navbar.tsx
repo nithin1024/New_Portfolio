@@ -124,7 +124,7 @@ export function Navbar() {
             <FaLinkedin className="h-4 w-4" aria-hidden />
           </a>
           <Button asChild size="sm" className="ml-1.5">
-            <a href={SITE_CONFIG.resumePath} download>
+            <a href={SITE_CONFIG.resumePath} download={SITE_CONFIG.resumeFileName}>
               Resume
             </a>
           </Button>
@@ -190,7 +190,11 @@ export function Navbar() {
                   <FaLinkedin className="h-5 w-5" aria-hidden />
                 </a>
                 <Button asChild size="sm" className="ml-auto">
-                  <a href={SITE_CONFIG.resumePath} download onClick={close}>
+                  <a
+                    href={SITE_CONFIG.resumePath}
+                    download={SITE_CONFIG.resumeFileName}
+                    onClick={close}
+                  >
                     Resume
                   </a>
                 </Button>

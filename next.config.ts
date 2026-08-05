@@ -55,6 +55,15 @@ const nextConfig: NextConfig = {
           },
         ],
       },
+      {
+        source: "/(.*)\\.pdf",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=0, must-revalidate",
+          },
+        ],
+      },
     ];
   },
 };

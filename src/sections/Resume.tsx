@@ -33,7 +33,7 @@ export function Resume() {
                 </div>
               </div>
               <MagneticButton asChild>
-                <a href={SITE_CONFIG.resumePath} download>
+                <a href={SITE_CONFIG.resumePath} download={SITE_CONFIG.resumeFileName}>
                   <Download className="h-4 w-4" />
                   Download PDF
                 </a>
@@ -56,7 +56,7 @@ export function Resume() {
                   mobile.
                 </p>
                 <MagneticButton asChild>
-                  <a href={SITE_CONFIG.resumePath} download>
+                  <a href={SITE_CONFIG.resumePath} download={SITE_CONFIG.resumeFileName}>
                     <Download className="h-4 w-4" aria-hidden />
                     Download PDF
                   </a>

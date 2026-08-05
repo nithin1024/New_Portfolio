@@ -9,7 +9,8 @@ export const SITE_CONFIG = {
   email: "nithinkumarbandaru2020@gmail.com",
   location: "Bengaluru, Karnataka, India",
   githubUsername: "nithin1024",
-  resumePath: "/resume.pdf",
+  resumePath: "/Bandaru-Nithinkumar-Resume.pdf",
+  resumeFileName: "Bandaru-Nithinkumar-Resume.pdf",
   keywords: [
     "Bandaru Nithinkumar",
     "AI Engineer",

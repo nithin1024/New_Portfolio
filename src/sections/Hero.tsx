@@ -121,7 +121,7 @@ export function Hero() {
               <a href="#projects">View Projects</a>
             </MagneticButton>
             <Button asChild size="lg" variant="secondary" className="w-full sm:w-auto">
-              <a href={SITE_CONFIG.resumePath} download>
+              <a href={SITE_CONFIG.resumePath} download={SITE_CONFIG.resumeFileName}>
                 <Download className="h-4 w-4 opacity-70" aria-hidden />
                 Download Resume
               </a>
