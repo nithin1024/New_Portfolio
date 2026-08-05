@@ -32,7 +32,7 @@ export function Footer() {
               icon: FaLinkedin,
             },
             {
-              href: "https://leetcode.com/u/nithin1024",
+              href: "https://leetcode.com/u/sBKS5iBGMC/",
               label: "LeetCode",
               icon: SiLeetcode,
             },

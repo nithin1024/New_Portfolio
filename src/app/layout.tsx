@@ -118,7 +118,7 @@ const personJsonLd = {
   sameAs: [
     "https://github.com/nithin1024",
     "https://www.linkedin.com/in/bandaru-nithinkumar-711a6529a",
-    "https://leetcode.com/u/nithin1024",
+    "https://leetcode.com/u/sBKS5iBGMC/",
   ],
   knowsAbout: [
     "Artificial Intelligence",

@@ -6,7 +6,7 @@ export const SITE_CONFIG = {
     "AI & Data Science Engineer and Software Developer specializing in machine learning, full-stack development, and data engineering. Building intelligent systems and production-ready applications.",
   url: "https://nithinkumar.vercel.app",
   ogImage: "/og-image.png",
-  email: "nithinkumar.bandaru@gmail.com",
+  email: "nithinkumarbandaru2020@gmail.com",
   location: "Bengaluru, Karnataka, India",
   githubUsername: "nithin1024",
   resumePath: "/resume.pdf",

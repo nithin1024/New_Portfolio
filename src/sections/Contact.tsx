@@ -118,9 +118,9 @@ export function Contact() {
                   },
                   {
                     label: "LeetCode",
-                    href: "https://leetcode.com/u/nithin1024",
+                    href: "https://leetcode.com/u/sBKS5iBGMC/",
                     icon: SiLeetcode,
-                    value: "nithin1024",
+                    value: "sBKS5iBGMC",
                   },
                 ].map((item) => (
                   <a

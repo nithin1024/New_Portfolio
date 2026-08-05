@@ -37,7 +37,6 @@ export const PROJECTS: Project[] = [
     ],
     techStack: ["Node.js", "Express", "React", "MongoDB", "Docker"],
     githubUrl: "https://github.com/nithin1024/AlgoArena-Code-Judge-Platform",
-    liveUrl: "https://github.com/nithin1024/AlgoArena-Code-Judge-Platform",
     image: "/projects/algoarena.svg",
     gradient: "from-sky-500/20 to-cyan-500/5",
   },
@@ -74,7 +73,7 @@ export const PROJECTS: Project[] = [
     ],
     techStack: ["HTML", "CSS", "JavaScript", "Responsive Design"],
     githubUrl: "https://github.com/nithin1024/NSMS_Travels",
-    liveUrl: "https://github.com/nithin1024/NSMS_Travels",
+    liveUrl: "https://nithin1024.github.io/NSMS_Travels/",
     image: "/projects/nsms-travels.svg",
     gradient: "from-orange-500/20 to-amber-500/5",
   },
@@ -114,8 +113,6 @@ export const PROJECTS: Project[] = [
     techStack: ["Python", "Scikit-learn", "Pandas", "NumPy", "SMOTETomek"],
     githubUrl:
       "https://github.com/nithin1024/Machine-learning-for-bank-loan-risk-assessment_Enhancing-predictive-acuuracy",
-    liveUrl:
-      "https://github.com/nithin1024/Machine-learning-for-bank-loan-risk-assessment_Enhancing-predictive-acuuracy",
     image: "/projects/bank-loan.svg",
     gradient: "from-emerald-500/20 to-teal-500/5",
   },
@@ -154,8 +151,6 @@ export const PROJECTS: Project[] = [
     ],
     techStack: ["Python", "PyTorch", "CNN", "Vision Transformer", "OpenCV"],
     githubUrl:
-      "https://github.com/nithin1024/MultiClass-Cancer-Classification-using-deep-learning-models",
-    liveUrl:
       "https://github.com/nithin1024/MultiClass-Cancer-Classification-using-deep-learning-models",
     image: "/projects/cancer-ml.svg",
     gradient: "from-violet-500/20 to-fuchsia-500/5",

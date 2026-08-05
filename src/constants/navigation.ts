@@ -21,12 +21,12 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
   {
     name: "LeetCode",
-    href: "https://leetcode.com/u/nithin1024",
+    href: "https://leetcode.com/u/sBKS5iBGMC/",
     icon: "leetcode",
   },
   {
     name: "Email",
-    href: "mailto:nithinkumar.bandaru@gmail.com",
+    href: "mailto:nithinkumarbandaru2020@gmail.com",
     icon: "email",
   },
 ];

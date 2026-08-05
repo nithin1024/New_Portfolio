@@ -115,7 +115,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     title: "AlgoArena Online Judge",
     description:
       "Designed and implemented a Docker-sandboxed online judge platform for competitive programming practice.",
-    year: "2025",
+    year: "2026",
     icon: "trophy",
   },
   {
